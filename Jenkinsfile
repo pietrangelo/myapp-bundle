@@ -14,9 +14,9 @@ node {
             sh "chmod +x mvnw"
             sh "./mvnw -ntp clean -P-webpack"
         }
-        stage('nohttp') {
-            sh "./mvnw -ntp checkstyle:check"
-        }
+        //stage('nohttp') {
+        //    sh "./mvnw -ntp checkstyle:check"
+        //}
 
         stage('backend tests') {
             try {
